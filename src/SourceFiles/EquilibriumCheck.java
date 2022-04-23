@@ -22,6 +22,7 @@ public class EquilibriumCheck {
 	public static void main(String[] args) {
 		int n;
 		Scanner in = new Scanner(System.in);
+		EquilibriumCheck d = new EquilibriumCheck();
 		n=in.nextInt();
 		int[] x = new int[n];
 		int[] y = new int[n];
@@ -31,6 +32,7 @@ public class EquilibriumCheck {
 			y[i]=in.nextInt();
 			z[i]=in.nextInt();
 		}
+		System.out.println(d.inEquilibrium(n,x,y,z));
 	}
 
 }
